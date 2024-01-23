@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EF_Core_CodeFirst_Homework.Migrations
 {
     [DbContext(typeof(Library))]
-    [Migration("20240123124139_First")]
-    partial class First
+    [Migration("20240123125812_First Version")]
+    partial class FirstVersion
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -61,9 +61,6 @@ namespace EF_Core_CodeFirst_Homework.Migrations
 
                     b.Property<int>("Status")
                         .HasColumnType("int");
-
-                    b.Property<string>("Title")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
